@@ -97,7 +97,7 @@ local colors = {
 -- ALT → OPTION
 
 -- leader keyを CTRL + kにマッピング
-local leader = { key = 'k', mods = 'CMD', timeout_milliseconds = 1000 };
+local leader = { key = 'k', mods = 'CTRL', timeout_milliseconds = 1000 };
 local act = wezterm.action;
 local keys = {
     -- CMD + cでタブを新規作成
@@ -139,11 +139,12 @@ local keys = {
 
 return {
     color_scheme = 'nightfox',
+    -- color_scheme = 'Neon',
     --default_cwd = default_cwd,
     colors = colors,
     leader = leader,
     keys = keys,
-    -- font = wezterm.font('Ricty Diminished', { weight = 'Bold' }),
+    font = wezterm.font("CommitMono", { weight = "Regular", stretch = "Normal", italic = false, logatures = true }),
     font_size = 14.0,
     line_height = 1.25,
     tab_bar_at_bottom = true,
