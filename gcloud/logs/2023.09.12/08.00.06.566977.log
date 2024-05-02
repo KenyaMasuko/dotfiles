@@ -1,0 +1,54 @@
+2023-09-12 08:00:06,567 DEBUG    root            Loaded Command Group: ['gcloud', 'sql']
+2023-09-12 08:00:06,590 DEBUG    root            Loaded Command Group: ['gcloud', 'sql', 'connect']
+2023-09-12 08:00:06,591 DEBUG    root            Running [gcloud.sql.connect] with arguments: [--user: "postgres", INSTANCE: "blog-training-db"]
+2023-09-12 08:00:06,604 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2023-09-12 08:00:06,608 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2023-09-12 08:00:06,767 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2023-09-12 08:00:06,779 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): sqladmin.googleapis.com:443
+2023-09-12 08:00:07,178 DEBUG    urllib3.connectionpool https://sqladmin.googleapis.com:443 "GET /sql/v1beta4/projects/graphql-nest-next/instances/blog-training-db?alt=json HTTP/1.1" 200 None
+2023-09-12 08:00:07,192 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): sqladmin.googleapis.com:443
+2023-09-12 08:00:07,837 DEBUG    urllib3.connectionpool https://sqladmin.googleapis.com:443 "PATCH /sql/v1beta4/projects/graphql-nest-next/instances/blog-training-db?alt=json HTTP/1.1" 400 None
+2023-09-12 08:00:07,842 WARNING  root            If you're connecting from an IPv6 address, or are constrained by certain organization policies (restrictPublicIP, restrictAuthorizedNetworks), consider running the beta version of this command by connecting through the Cloud SQL proxy: gcloud beta sql connect
+2023-09-12 08:00:07,843 DEBUG    root            (gcloud.sql.connect) HTTPError 400: Invalid request: Invalid flag for instance role: CloudSQL Second Generation doesn't support IPv6 networks/subnets: 240d:1a:534:5000:ad53:5da3:ee76:4367.
+Traceback (most recent call last):
+  File "/Users/masukokenya/google-cloud-sdk/lib/surface/sql/connect.py", line 146, in _AllowlistClientIP
+    result = sql_client.instances.Patch(patch_request)
+  File "/Users/masukokenya/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/sqladmin/v1beta4/sqladmin_v1beta4_client.py", line 738, in Patch
+    return self._RunMethod(
+  File "/Users/masukokenya/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 737, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+  File "/Users/masukokenya/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 743, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+  File "/Users/masukokenya/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 609, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpBadRequestError: HttpError accessing <https://sqladmin.googleapis.com/sql/v1beta4/projects/graphql-nest-next/instances/blog-training-db?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Mon, 11 Sep 2023 23:00:09 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': 400}>, content <{
+  "error": {
+    "code": 400,
+    "message": "Invalid request: Invalid flag for instance role: CloudSQL Second Generation doesn't support IPv6 networks/subnets: 240d:1a:534:5000:ad53:5da3:ee76:4367.",
+    "errors": [
+      {
+        "message": "Invalid request: Invalid flag for instance role: CloudSQL Second Generation doesn't support IPv6 networks/subnets: 240d:1a:534:5000:ad53:5da3:ee76:4367.",
+        "domain": "global",
+        "reason": "invalid"
+      }
+    ]
+  }
+}
+>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/masukokenya/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/masukokenya/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 807, in Run
+    resources = command_instance.Run(args)
+  File "/Users/masukokenya/google-cloud-sdk/lib/surface/sql/connect.py", line 399, in Run
+    return RunConnectCommand(args, supports_database=True)
+  File "/Users/masukokenya/google-cloud-sdk/lib/surface/sql/connect.py", line 239, in RunConnectCommand
+    acl_name = _AllowlistClientIP(instance_ref, sql_client, sql_messages,
+  File "/Users/masukokenya/google-cloud-sdk/lib/surface/sql/connect.py", line 154, in _AllowlistClientIP
+    raise calliope_exceptions.HttpException(error)
+googlecloudsdk.calliope.exceptions.HttpException: HTTPError 400: Invalid request: Invalid flag for instance role: CloudSQL Second Generation doesn't support IPv6 networks/subnets: 240d:1a:534:5000:ad53:5da3:ee76:4367.
+2023-09-12 08:00:07,847 ERROR    root            (gcloud.sql.connect) HTTPError 400: Invalid request: Invalid flag for instance role: CloudSQL Second Generation doesn't support IPv6 networks/subnets: 240d:1a:534:5000:ad53:5da3:ee76:4367.
+2023-09-12 08:00:07,864 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,30 @@
+2023-09-09 08:51:30,684 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2023-09-09 08:51:30,686 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'list']
+2023-09-09 08:51:30,687 DEBUG    root            Running [gcloud.auth.list] with arguments: []
+2023-09-09 08:51:30,694 DEBUG    root            Chosen display Format:    table[title='Credentialed Accounts'](
+        status.yesno(yes='*', no=''):label=ACTIVE,
+        account
+    )
+2023-09-09 08:51:30,695 INFO     root            Display format: "    table[title='Credentialed Accounts'](
+        status.yesno(yes='*', no=''):label=ACTIVE,
+        account
+    )"
+2023-09-09 08:51:30,695 INFO     ___FILE_ONLY___   Credentialed Accounts
+2023-09-09 08:51:30,695 INFO     ___FILE_ONLY___ 
+
+2023-09-09 08:51:30,695 INFO     ___FILE_ONLY___ ACTIVE
+2023-09-09 08:51:30,695 INFO     ___FILE_ONLY___   
+2023-09-09 08:51:30,695 INFO     ___FILE_ONLY___ ACCOUNT
+2023-09-09 08:51:30,695 INFO     ___FILE_ONLY___ 
+
+2023-09-09 08:51:30,695 INFO     ___FILE_ONLY___ *
+2023-09-09 08:51:30,695 INFO     ___FILE_ONLY___        
+2023-09-09 08:51:30,695 INFO     ___FILE_ONLY___ ken12rug@gmail.com
+2023-09-09 08:51:30,695 INFO     ___FILE_ONLY___ 
+
+2023-09-09 08:51:30,695 INFO     ___FILE_ONLY___ 
+To set the active account, run:
+    $ gcloud config set account `ACCOUNT`
+
+
+2023-09-09 08:51:30,701 DEBUG    root            Metrics reporting process started...

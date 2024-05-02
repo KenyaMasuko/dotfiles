@@ -144,7 +144,7 @@ return {
     colors = colors,
     leader = leader,
     keys = keys,
-    font = wezterm.font("CommitMono", { weight = "Regular", stretch = "Normal", italic = false, logatures = true }),
+    font = wezterm.font("CommitMono", { weight = "Regular", stretch = "Normal", italic = false }),
     font_size = 14.0,
     line_height = 1.25,
     tab_bar_at_bottom = true,
@@ -154,5 +154,7 @@ return {
         saturation = 1,
         brightness = 1,
     },
-    window_background_opacity = 0.7
+    window_background_opacity = 0.7,
+    check_for_updates = true,
+    check_for_updates_interval_seconds = 86400
 }
