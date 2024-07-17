@@ -1,5 +1,0 @@
-2023-09-12 01:00:37,291 DEBUG    root            Loaded Command Group: ['gcloud', 'sql']
-2023-09-12 01:00:37,294 DEBUG    root            Loaded Command Group: ['gcloud', 'sql', 'users']
-2023-09-12 01:00:37,320 DEBUG    root            Loaded Command Group: ['gcloud', 'sql', 'users', 'list']
-2023-09-12 01:00:37,321 ERROR    root            (gcloud.sql.users.list) argument --instance: Must be specified.
-2023-09-12 01:00:37,324 DEBUG    root            Metrics reporting process started...

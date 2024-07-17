@@ -1,8 +1,0 @@
-2023-09-09 08:25:48,769 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
-2023-09-09 08:25:48,835 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
-2023-09-09 08:25:48,836 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "core/account", VALUE: "ken12rug@gmail.com"]
-2023-09-09 08:25:48,837 INFO     ___FILE_ONLY___ Updated property [core/account].
-
-2023-09-09 08:25:48,837 DEBUG    root            Chosen display Format:default
-2023-09-09 08:25:48,837 INFO     root            Display format: "default"
-2023-09-09 08:25:48,842 DEBUG    root            Metrics reporting process started...
