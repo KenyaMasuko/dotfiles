@@ -1,0 +1,6 @@
+[user]
+	name = Kenya Masuko
+	email = ken12rug@gmail.com
+
+[alias]
+  delete-merged-branch = "!f () { git checkout $1; git branch --merged|egrep -v '\\*|develop|main'|xargs git branch -d; };f"
