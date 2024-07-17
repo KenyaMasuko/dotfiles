@@ -59,12 +59,6 @@ defaults write -g AppleShowAllExtensions -bool true
 # Enable switching to ABC input mode with Caps Lock key
 defaults write com.apple.inputmethod.Kotoeri JIMPrefCapsLockSwitchesInputMode -bool true
 
-# Set display to turn off after 30 minutes when on battery
-sudo pmset -b displaysleep 30
-
-# Set display to turn off after 30 minutes when connected to power adapter
-sudo pmset -c displaysleep 30
-
 # Set Japanese - Romaji input to Windows-style key operations
 defaults write com.apple.inputmethod.Kotoeri JIMPrefLiveConversionKey -bool false
 defaults write com.apple.inputmethod.Kotoeri JIMPrefShiftKeyAction -int 1
