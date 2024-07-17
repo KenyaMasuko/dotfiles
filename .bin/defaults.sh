@@ -8,9 +8,6 @@ fi
 # Show bluetooth in the menu bar
 defaults write com.apple.controlcenter "NSStatusItem Visible Bluetooth" -bool true
 
-# Automatically hide or show the Dock
-defaults write com.apple.dock autohide -bool true
-
 # Avoid creating `.DS_Store` files on network volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
@@ -104,6 +101,20 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 # Bottom right screen corner → Show application windows
 defaults write com.apple.dock wvous-br-corner -int 3
 defaults write com.apple.dock wvous-br-modifier -int 0
+
+# Automatically hide or show the Dock
+defaults write com.apple.dock autohide -bool true
+# Wipe all app icons from the Dock
+defaults write com.apple.dock persistent-apps -array
+# Set the icon size
+defaults write com.apple.dock tilesize -int 55
+# Magnificate the Dock
+defaults write com.apple.dock magnification -bool true
+
+# Enable `Tap to click`
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 for app in "Dock" \
 	"Finder" \
