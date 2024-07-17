@@ -9,3 +9,9 @@ for dotfile in "${SCRIPT_DIR}"/.??* ; do
 
     ln -fnsv "$dotfile" "$HOME"
 done
+
+CONFIG_DIR="$(cd "$(dirname "$0")/../.config" && pwd)"
+
+for config in "${CONFIG_DIR}"/*; do
+    ln -fnsv "$config" "$HOME/.config"
+done
