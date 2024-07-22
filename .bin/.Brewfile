@@ -1,6 +1,5 @@
 cask_args appdir: "/Applications"
 
-brew "docker"
 brew "jq"
 brew "tree"
 brew "git"
@@ -11,6 +10,7 @@ brew "zsh-completions"
 brew "font-hackgen"
 brew "font-hackgen-nerd"
 
+cask "docker"
 cask "dbeaver-community"
 cask "discord"
 cask "firefox"
