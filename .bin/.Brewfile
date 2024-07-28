@@ -9,6 +9,7 @@ brew "neovim"
 brew "zsh-completions"
 brew "font-hackgen"
 brew "font-hackgen-nerd"
+brew "deno"
 
 cask "docker"
 cask "dbeaver-community"
