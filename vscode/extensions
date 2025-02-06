@@ -1,4 +1,3 @@
-FaroSystemAppender constructor
 1natsu.insert-br-tag
 4ops.terraform
 aaron-bond.better-comments
@@ -13,12 +12,14 @@ biomejs.biome
 blanu.vscode-styled-jsx
 bmewburn.vscode-intelephense-client
 bradlc.vscode-tailwindcss
+catppuccin.catppuccin-vsc
 christian-kohler.path-intellisense
 clinyong.vscode-css-modules
 codingyu.laravel-goto-view
 commmune-inc.i18n-commmune
 ctenbrinke.vscode-tsv
 damms005.devdb
+davidanson.vscode-markdownlint
 dbaeumer.vscode-eslint
 denoland.vscode-deno
 divlo.vscode-styled-jsx-languageserver
@@ -63,6 +64,7 @@ ms-vscode.cmake-tools
 ms-vscode.cpptools
 ms-vscode.cpptools-extension-pack
 ms-vscode.cpptools-themes
+ms-vscode.makefile-tools
 ms-vsliveshare.vsliveshare
 naoray.laravel-goto-components
 nixon.env-cmd-file-syntax
@@ -72,7 +74,9 @@ onecentlin.laravel5-snippets
 orta.vscode-jest
 orta.vscode-twoslash
 orta.vscode-twoslash-queries
+patricklee.vsnotes
 pgl.laravel-jump-controller
+phoenisx.cssvar
 pranaygp.vscode-css-peek
 prisma.prisma
 pulkitgangwar.nextjs-snippets
@@ -84,7 +88,6 @@ shufo.vscode-blade-formatter
 slevesque.shader
 ssmi.after-dark
 streetsidesoftware.code-spell-checker
-styled-components.vscode-styled-components
 stylelint.vscode-stylelint
 teabyii.ayu
 twxs.cmake
@@ -104,3 +107,4 @@ xdebug.php-debug
 yoavbls.pretty-ts-errors
 yusukehirao.vscode-markuplint
 yzhang.markdown-all-in-one
+z4yross.anysphere-dark
