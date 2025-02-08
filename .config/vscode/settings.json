@@ -1,0 +1,384 @@
+{
+  "workbench.iconTheme": "vscode-icons",
+  "git.autofetch": true,
+  "liveSassCompile.settings.includeItems": [],
+  "editor.inlineSuggest.enabled": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.accessibilitySupport": "off",
+  "editor.stickyScroll.enabled": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "prettier.requireConfig": false,
+  "prettier.documentSelectors": [
+    "**/*.astro"
+  ],
+  "editor.cursorSmoothCaretAnimation": "on",
+  "blade.format.enable": true,
+  "workbench.editor.preferHistoryBasedLanguageDetection": true,
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "terminal.integrated.allowChords": false,
+  "terminal.external.osxExec": "Warp.app",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "terminal.integrated.fontFamily": "HackGen Console NF",
+  "terminal.integrated.fontSize": 14,
+  "editor.formatOnSave": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[graphql]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  //   "editor.formatOnSave": true
+  // },
+  // "[javascriptreact]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  //   "editor.formatOnSave": true
+  // },
+  // "[json]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  //   "editor.formatOnSave": true
+  // },
+  // "[typescript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  //   "editor.formatOnSave": true
+  // },
+  // "[typescriptreact]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  //   "editor.formatOnSave": true
+  // },
+  "[scss]": {
+    "editor.defaultFormatter": "vscode.css-language-features",
+    "editor.formatOnSave": true
+  },
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true
+  },
+  "[blade]": {
+    "editor.defaultFormatter": "onecentlin.laravel-blade",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma",
+    "editor.formatOnSave": true
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.formatOnSave": true
+  },
+  "javascript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": "~/../css"
+    }
+  ],
+  "liveSassCompile.settings.autoprefix": [
+    "last 2 versions",
+    "Android >= 4",
+    "ios_saf >= 8"
+  ],
+  "explorer.compactFolders": false,
+  "editor.detectIndentation": false,
+  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+  "search.smartCase": true,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "emmet.variables": {
+    "lang": "ja"
+  },
+  "indentRainbow.colors": [
+    "rgba(153, 40, 57, 0.24)",
+    "rgba(111, 115, 30, 0.24)",
+    "rgba(30, 115, 102, 0.24)",
+    "rgba(85, 30, 115, 0.24)"
+  ],
+  "liveServer.settings.useLocalIp": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.ChromeDebuggingAttachment": false,
+  "insert-br-tag.enableOnLanguage": [
+    "html",
+    "php",
+    "javascript"
+  ],
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.eslint": "explicit"
+  // },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.tabSize": 2,
+  "vim.useCtrlKeys": true,
+  "vim.useSystemClipboard": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.hlsearch": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "screencastMode.fontSize": 30,
+  "screencastMode.mouseIndicatorSize": 60,
+  "screencastMode.verticalOffset": 10,
+  "screencastMode.keyboardShortcutsFormat": "keys",
+  "git.openRepositoryInParentFolders": "never",
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]",
+    "NOTE"
+  ],
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.histroy/**": true,
+    "**/.ipynb_checkpoints/**": true,
+    "**/node_modules/**": true,
+    "**/out/**": true
+  },
+  "intelephense.stubs": [
+    "apache",
+    "bcmath",
+    "bz2",
+    "calendar",
+    "com_dotnet",
+    "Core",
+    "ctype",
+    "curl",
+    "date",
+    "dba",
+    "dom",
+    "enchant",
+    "exif",
+    "FFI",
+    "fileinfo",
+    "filter",
+    "fpm",
+    "ftp",
+    "gd",
+    "gettext",
+    "gmp",
+    "hash",
+    "iconv",
+    "imap",
+    "intl",
+    "json",
+    "ldap",
+    "libxml",
+    "mbstring",
+    "meta",
+    "mysqli",
+    "oci8",
+    "odbc",
+    "openssl",
+    "pcntl",
+    "pcre",
+    "PDO",
+    "pdo_ibm",
+    "pdo_mysql",
+    "pdo_pgsql",
+    "pdo_sqlite",
+    "pgsql",
+    "Phar",
+    "posix",
+    "pspell",
+    "random",
+    "readline",
+    "Reflection",
+    "session",
+    "shmop",
+    "SimpleXML",
+    "snmp",
+    "soap",
+    "sockets",
+    "sodium",
+    "SPL",
+    "sqlite3",
+    "standard",
+    "superglobals",
+    "sysvmsg",
+    "sysvsem",
+    "sysvshm",
+    "tidy",
+    "tokenizer",
+    "xml",
+    "xmlreader",
+    "xmlrpc",
+    "xmlwriter",
+    "xsl",
+    "Zend OPcache",
+    "zip",
+    "zlib",
+    "wordpress"
+  ],
+  "redhat.telemetry.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "yaml": false
+  },
+  "errorLens.excludeBySource": [
+    "ts(2322)"
+  ],
+  "git.confirmSync": false,
+  // "eslint.workingDirectories": [],
+  "javascript.preferGoToSourceDefinition": true,
+  "typescript.preferGoToSourceDefinition": true,
+  "editor.fontFamily": "HackGen Console NF",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 1.6,
+  "editor.fontWeight": 400,
+  "editor.letterSpacing": 0,
+  "githubPullRequests.fileListLayout": "tree",
+  "code-runner.runInTerminal": true,
+  "[cpp]": {
+    "editor.wordBasedSuggestions": "off",
+    "editor.suggest.insertMode": "replace",
+    "editor.semanticHighlighting.enabled": true
+  },
+  "clang.executable": "clang++",
+  "clang.cxxflags": [
+    "-std=c++14"
+  ],
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "php": "php",
+    "python": "python -u",
+    "perl": "perl",
+    "perl6": "perl6",
+    "ruby": "ruby",
+    "go": "go run",
+    "lua": "lua",
+    "groovy": "groovy",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "bat": "cmd /c",
+    "shellscript": "bash",
+    "fsharp": "fsi",
+    "csharp": "scriptcs",
+    "vbscript": "cscript //Nologo",
+    "typescript": "ts-node",
+    "coffeescript": "coffee",
+    "scala": "scala",
+    "swift": "swift",
+    "julia": "julia",
+    "crystal": "crystal",
+    "ocaml": "ocaml",
+    "r": "Rscript",
+    "applescript": "osascript",
+    "clojure": "lein exec",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "racket": "racket",
+    "ahk": "autohotkey",
+    "autoit": "autoit3",
+    "dart": "dart",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "haskell": "runhaskell",
+    "nim": "nim compile --verbosity:0 --hints:off --run",
+    "lisp": "sbcl --script",
+    "kit": "kitc --run"
+  },
+  // "eslint.format.enable": true,
+  // "eslint.codeActionsOnSave.rules": null,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "editor.codeLensFontFamily": "HackGen Console NF",
+  "scm.inputFontFamily": "HackGen Console NF",
+  "cursor.cpp.disabledLanguages": [],
+  "githubPullRequests.pullBranch": "never",
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "accessibility.lineHasError": {
+    "sound": "off"
+  },
+  "accessibility.lineHasFoldedArea": {
+    "sound": "off"
+  },
+  "accessibility.lineHasBreakpoint": {
+    "sound": "off"
+  },
+  "accessibility.lineHasInlineSuggestion": {
+    "sound": "off"
+  },
+  "accessibility.onDebugBreak": {
+    "sound": "off"
+  },
+  "accessibility.noInlayHints": {
+    "sound": "off"
+  },
+  "hediet.vscode-drawio.resizeImages": null,
+  "prisma.showPrismaDataPlatformNotification": false,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "vscode-neovim.compositeKeys": {
+    "jj": {
+      "command": "vscode-neovim.escape"
+    }
+  },
+  // "editor.codeActionsOnSave": {
+  //   "quickfix.biome": "explicit"
+  // }
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true
+  },
+  // "editor.codeActionsOnSave": {
+  //   "quickfix.biome": "explicit"
+  // },
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
+  "Devdb.colorTheme": "dark",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "vscode-neovim.neovimExecutablePaths.linux": "/opt/homebrew/bin/nvim",
+  "vscode-neovim.neovimInitVimPaths.darwin": "/Users/kenya.masuko/.config/nvim/init.lua",
+  "vsnotes.defaultNotePath": "/Users/kenya.masuko/work/vsnotes",
+  "terminal.integrated.defaultLocation": "editor"
+}
