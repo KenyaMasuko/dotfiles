@@ -8,29 +8,24 @@ alias pn="pnpm"
 
 export PATH=/opt/homebrew/bin/:$PATH
 
+# Load zsh-autocomplete
+source ${HOME}/dotfiles/.config/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
 # Load Homebrew environment settings
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Initialize Starship for Zsh
 eval "$(starship init zsh)"
 
-zsh-completions
+# Load mise
+eval "$(mise activate zsh)"
+
+# Setup Homebrew package completions
 if type brew &>/dev/null; then
     FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
     autoload -Uz compinit
     compinit
 fi
-
-# pnpm
-export PNPM_HOME="/Users/kenya.masuko/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
-
-# mise
-eval "$(~/.local/bin/mise activate zsh)"
 
 # コマンド履歴を１万行保存する
 HISTFILE=~/.zsh_history
