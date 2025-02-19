@@ -1,0 +1,47 @@
+# 環境変数と機密情報
+.env
+.env.*
+*.env
+.envrc
+
+# APIキーや認証情報
+*.pem
+*.key
+*.cert
+*.p12
+*.pfx
+*.crt
+
+# 個人設定ファイル
+.aws/
+.ssh/
+.gnupg/
+.config/gcloud/
+.config/gh/hosts.yml
+
+# キーチェーンやトークン
+*.keychain
+.netrc
+.npmrc
+.yarnrc
+
+# ログファイル
+*.log
+logs/
+
+# キャッシュディレクトリ
+.cache/
+tmp/
+temp/
+
+# バックアップファイル
+*.bak
+*.backup
+*~
+
+# その他の機密情報を含む可能性のあるファイル
+credentials.json
+token.json
+secrets.yaml
+secrets.yml
+config.local.js

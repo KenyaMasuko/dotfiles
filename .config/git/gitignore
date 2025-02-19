@@ -31,6 +31,52 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# OS generated files
+.DS_Store?
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# エディタ/IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.vs/
+
+# 環境変数と機密情報
+.env
+.env.*
+*.env
+.envrc
+
+# ログとデータベース
+*.log
+*.sqlite
+*.sqlite3
+*.db
+
+# 依存関係とビルド
+node_modules/
+vendor/
+dist/
+build/
+*.pyc
+__pycache__/
+.pytest_cache/
+
+# バックアップファイル
+*.bak
+*.backup
+*.old
+
+# その他
+.cache/
+tmp/
+temp/
+.history/
 
 # ====================
 #
@@ -419,3 +465,6 @@ terraform.rc
 packaged.yaml
 # samconfig.toml
 *.db
+
+# mise
+mise.toml
